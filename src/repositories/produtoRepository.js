@@ -7,11 +7,15 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const arquivo = path.resolve(__dirname,'../database/db.json');
 
 
-async function lerDados() {
+async function buscarTodosProdutos() {
     const conteudo = await readFile(arquivo,);
 
     return JSON.parse(conteudo);
 }
+
+export {
+    buscarTodosProdutos
+};
 
 
 
